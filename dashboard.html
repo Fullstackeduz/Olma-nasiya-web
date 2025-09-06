@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olma Nasiya - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🍏 Olma Nasiya</div>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="login.html">Chiqish</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Qarzdorliklarim</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Ism</th>
+          <th>Miqdor</th>
+          <th>Status</th>
+          <th>Amal</th>
+        </tr>
+      </thead>
+      <tbody id="debt-list">
+        <!-- Dinamik ravishda JS orqali to‘ldiriladi -->
+      </tbody>
+    </table>
+
+    <h3>Qarz qo‘shish</h3>
+    <form id="debt-form">
+      <input type="text" id="debtor" placeholder="Kimga" required>
+      <input type="number" id="amount" placeholder="Miqdor" required>
+      <button type="submit" class="btn">Qo‘shish</button>
+    </form>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
