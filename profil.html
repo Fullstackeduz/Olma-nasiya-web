@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olma Nasiya - Profil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🍏 Olma Nasiya</div>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="login.html">Chiqish</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Mening profilim</h2>
+    <div class="profile-card">
+      <p><b>Ism:</b> <span id="user-name">Foydalanuvchi</span></p>
+      <p><b>Email:</b> <span id="user-email">example@mail.com</span></p>
+      <button id="edit-profile" class="btn">Tahrirlash</button>
+    </div>
+
+    <div id="edit-form" style="display:none; margin-top:20px;">
+      <h3>Profilni yangilash</h3>
+      <form id="profile-form">
+        <input type="text" id="new-name" placeholder="Yangi ism" required>
+        <input type="email" id="new-email" placeholder="Yangi email" required>
+        <button type="submit" class="btn">Saqlash</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="profile.js"></script>
+</body>
+</html>
