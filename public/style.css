@@ -1,0 +1,42 @@
+:root{
+  --white:#ffffff;
+  --bg:#f5f7fa;
+  --brand:#34c759;
+  --dark:#333;
+  --max-width:1100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Open Sans", sans-serif;
+}
+
+/* Basic layout */
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--brand),#28a745);color:#fff;padding:12px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:42px;height:42px}
+.brand-title{font-weight:700;font-size:1.1rem}
+.nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+.nav .btn{background:rgba(255,255,255,0.12);padding:8px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.14)}
+
+.hero{padding:80px 0;text-align:center;background: url('assets/bg.jpg') center/cover no-repeat;color:white}
+.hero h1{font-size:2.2rem;margin:0 0 12px}
+.hero p{max-width:700px;margin:0 auto 18px}
+.btn{display:inline-block;background:#fff;padding:12px 22px;border-radius:8px;color:var(--brand);font-weight:700;text-decoration:none}
+
+/* features */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:40px 0}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+/* footer */
+.site-footer{background:#222;color:#fff;padding:18px 0;text-align:center}
+
+/* Auth page styles (login/register) - based on your CSS */
+.auth-page{display:flex;align-items:center;justify-content:center;height:100vh;padding:20px}
+.container.right-panel-active{width:760px;height:420px;}
+
+/* Include refactored CSS you provided earlier for overlay, forms, inputs, buttons, animations */
+/* For brevity — paste the CSS block you already provided (the large CSS you sent) here.
+   Keep the same classes: .container__form, .container--signin, .overlay, .btn, .input, etc. */
