@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kirish - Olma Nasiya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-page">
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form class="form" id="form1">
+          <h2 class="form__title">Sign Up</h2>
+          <input id="su_username" type="text" placeholder="User" class="input" required />
+          <input id="su_email" type="email" placeholder="Email" class="input" required />
+          <input id="su_password" type="password" placeholder="Password" class="input" required />
+          <button id="btnSignup" class="btn">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input id="si_email" type="email" placeholder="Email" class="input" required />
+          <input id="si_password" type="password" placeholder="Password" class="input" required />
+          <a href="#" class="link">Forgot your password?</a>
+          <button id="btnSignin" class="btn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <h3>Welcome back!</h3>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <h3>Hello, Friend!</h3>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+  </html>
